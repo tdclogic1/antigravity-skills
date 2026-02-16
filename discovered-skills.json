@@ -1,0 +1,1259 @@
+{
+  "scannedAt": "2026-02-14T14:39:29.133Z",
+  "query": "filename:SKILL.md path:skills",
+  "reposScanned": 1,
+  "totalDiscovered": 50,
+  "duration": "1.0 hour(s)",
+  "skills": [
+    {
+      "id": "multi-reviewer-patterns",
+      "name": "multi-reviewer-patterns",
+      "description": "Coordinate parallel code reviews across multiple quality dimensions with finding deduplication, severity calibration, and consolidated reporting. Use this skill when organizing multi-reviewer code reviews, calibrating finding severity, or consolidating review results.",
+      "category": "architecture",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/agent-teams/skills/multi-reviewer-patterns/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/agent-teams/skills/multi-reviewer-patterns/SKILL.md"
+      },
+      "score": 73,
+      "tier": "★★",
+      "isDuplicate": false,
+      "duplicateOf": null,
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 25,
+        "quality": 20,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "parallel-debugging",
+      "name": "parallel-debugging",
+      "description": "Debug complex issues using competing hypotheses with parallel investigation, evidence collection, and root cause arbitration. Use this skill when debugging bugs with multiple potential causes, performing root cause analysis, or organizing parallel investigation workflows.",
+      "category": "general",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/agent-teams/skills/parallel-debugging/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/agent-teams/skills/parallel-debugging/SKILL.md"
+      },
+      "score": 73,
+      "tier": "★★",
+      "isDuplicate": false,
+      "duplicateOf": null,
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 25,
+        "quality": 20,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "parallel-feature-development",
+      "name": "parallel-feature-development",
+      "description": "Coordinate parallel feature development with file ownership strategies, conflict avoidance rules, and integration patterns for multi-agent implementation. Use this skill when decomposing features for parallel development, establishing file ownership boundaries, or managing integration between parallel work streams.",
+      "category": "architecture",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/agent-teams/skills/parallel-feature-development/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/agent-teams/skills/parallel-feature-development/SKILL.md"
+      },
+      "score": 73,
+      "tier": "★★",
+      "isDuplicate": false,
+      "duplicateOf": null,
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 25,
+        "quality": 20,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "task-coordination-strategies",
+      "name": "task-coordination-strategies",
+      "description": "Decompose complex tasks, design dependency graphs, and coordinate multi-agent work with proper task descriptions and workload balancing. Use this skill when breaking down work for agent teams, managing task dependencies, or monitoring team progress.",
+      "category": "infrastructure",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/agent-teams/skills/task-coordination-strategies/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/agent-teams/skills/task-coordination-strategies/SKILL.md"
+      },
+      "score": 73,
+      "tier": "★★",
+      "isDuplicate": false,
+      "duplicateOf": null,
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 25,
+        "quality": 20,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "team-communication-protocols",
+      "name": "team-communication-protocols",
+      "description": "Structured messaging protocols for agent team communication including message type selection, plan approval, shutdown procedures, and anti-patterns to avoid. Use this skill when establishing team communication norms, handling plan approvals, or managing team shutdown.",
+      "category": "architecture",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/agent-teams/skills/team-communication-protocols/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/agent-teams/skills/team-communication-protocols/SKILL.md"
+      },
+      "score": 73,
+      "tier": "★★",
+      "isDuplicate": false,
+      "duplicateOf": null,
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 25,
+        "quality": 20,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "team-composition-patterns",
+      "name": "team-composition-patterns",
+      "description": "Design optimal agent team compositions with sizing heuristics, preset configurations, and agent type selection. Use this skill when deciding team size, selecting agent types, or configuring team presets for multi-agent workflows.",
+      "category": "architecture",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/agent-teams/skills/team-composition-patterns/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/agent-teams/skills/team-composition-patterns/SKILL.md"
+      },
+      "score": 73,
+      "tier": "★★",
+      "isDuplicate": false,
+      "duplicateOf": null,
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 25,
+        "quality": 20,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "postgresql",
+      "name": "postgresql-table-design",
+      "description": "Design a PostgreSQL-specific schema. Covers best-practices, data types, indexing, constraints, performance patterns, and advanced features",
+      "category": "data-ai",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/database-design/skills/postgresql/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/database-design/skills/postgresql/SKILL.md"
+      },
+      "score": 56,
+      "tier": "★★",
+      "isDuplicate": true,
+      "duplicateOf": "postgresql",
+      "breakdown": {
+        "completeness": 16,
+        "uniqueness": 0,
+        "quality": 20,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "temporal-python-testing",
+      "name": "temporal-python-testing",
+      "description": "Test Temporal workflows with pytest, time-skipping, and mocking strategies. Covers unit testing, integration testing, replay testing, and local development setup. Use when implementing Temporal workflow tests or debugging test failures.",
+      "category": "development",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/backend-development/skills/temporal-python-testing/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/backend-development/skills/temporal-python-testing/SKILL.md"
+      },
+      "score": 54,
+      "tier": "★★",
+      "isDuplicate": true,
+      "duplicateOf": "temporal-python-testing",
+      "breakdown": {
+        "completeness": 11,
+        "uniqueness": 0,
+        "quality": 23,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "api-design-principles",
+      "name": "api-design-principles",
+      "description": "Master REST and GraphQL API design principles to build intuitive, scalable, and maintainable APIs that delight developers. Use when designing new APIs, reviewing API specifications, or establishing API design standards.",
+      "category": "development",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/backend-development/skills/api-design-principles/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/backend-development/skills/api-design-principles/SKILL.md"
+      },
+      "score": 51,
+      "tier": "★★",
+      "isDuplicate": true,
+      "duplicateOf": "api-design-principles",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 23,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "architecture-patterns",
+      "name": "architecture-patterns",
+      "description": "Implement proven backend architecture patterns including Clean Architecture, Hexagonal Architecture, and Domain-Driven Design. Use when architecting complex backend systems or refactoring existing applications for better maintainability.",
+      "category": "development",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/backend-development/skills/architecture-patterns/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/backend-development/skills/architecture-patterns/SKILL.md"
+      },
+      "score": 51,
+      "tier": "★★",
+      "isDuplicate": true,
+      "duplicateOf": "architecture-patterns",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 23,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "auth-implementation-patterns",
+      "name": "auth-implementation-patterns",
+      "description": "Master authentication and authorization patterns including JWT, OAuth2, session management, and RBAC to build secure, scalable access control systems. Use when implementing auth systems, securing APIs, or debugging security issues.",
+      "category": "security",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/developer-essentials/skills/auth-implementation-patterns/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/developer-essentials/skills/auth-implementation-patterns/SKILL.md"
+      },
+      "score": 51,
+      "tier": "★★",
+      "isDuplicate": true,
+      "duplicateOf": "auth-implementation-patterns",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 23,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "code-review-excellence",
+      "name": "code-review-excellence",
+      "description": "Master effective code review practices to provide constructive feedback, catch bugs early, and foster knowledge sharing while maintaining team morale. Use when reviewing pull requests, establishing review standards, or mentoring developers.",
+      "category": "general",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/developer-essentials/skills/code-review-excellence/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/developer-essentials/skills/code-review-excellence/SKILL.md"
+      },
+      "score": 51,
+      "tier": "★★",
+      "isDuplicate": true,
+      "duplicateOf": "code-review-excellence",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 23,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "cost-optimization",
+      "name": "cost-optimization",
+      "description": "Optimize cloud costs through resource rightsizing, tagging strategies, reserved instances, and spending analysis. Use when reducing cloud expenses, analyzing infrastructure costs, or implementing cost governance policies.",
+      "category": "infrastructure",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/cloud-infrastructure/skills/cost-optimization/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/cloud-infrastructure/skills/cost-optimization/SKILL.md"
+      },
+      "score": 51,
+      "tier": "★★",
+      "isDuplicate": true,
+      "duplicateOf": "cost-optimization",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 23,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "debugging-strategies",
+      "name": "debugging-strategies",
+      "description": "Master systematic debugging techniques, profiling tools, and root cause analysis to efficiently track down bugs across any codebase or technology stack. Use when investigating bugs, performance issues, or unexpected behavior.",
+      "category": "general",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/developer-essentials/skills/debugging-strategies/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/developer-essentials/skills/debugging-strategies/SKILL.md"
+      },
+      "score": 51,
+      "tier": "★★",
+      "isDuplicate": true,
+      "duplicateOf": "debugging-strategies",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 23,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "defi-protocol-templates",
+      "name": "defi-protocol-templates",
+      "description": "Implement DeFi protocols with production-ready templates for staking, AMMs, governance, and lending systems. Use when building decentralized finance applications or smart contract protocols.",
+      "category": "business",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/blockchain-web3/skills/defi-protocol-templates/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/blockchain-web3/skills/defi-protocol-templates/SKILL.md"
+      },
+      "score": 51,
+      "tier": "★★",
+      "isDuplicate": true,
+      "duplicateOf": "defi-protocol-templates",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 23,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "deployment-pipeline-design",
+      "name": "deployment-pipeline-design",
+      "description": "Design multi-stage CI/CD pipelines with approval gates, security checks, and deployment orchestration. Use when architecting deployment workflows, setting up continuous delivery, or implementing GitOps practices.",
+      "category": "security",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/cicd-automation/skills/deployment-pipeline-design/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/cicd-automation/skills/deployment-pipeline-design/SKILL.md"
+      },
+      "score": 51,
+      "tier": "★★",
+      "isDuplicate": true,
+      "duplicateOf": "deployment-pipeline-design",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 23,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "e2e-testing-patterns",
+      "name": "e2e-testing-patterns",
+      "description": "Master end-to-end testing with Playwright and Cypress to build reliable test suites that catch bugs, improve confidence, and enable fast deployment. Use when implementing E2E tests, debugging flaky tests, or establishing testing standards.",
+      "category": "infrastructure",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/developer-essentials/skills/e2e-testing-patterns/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/developer-essentials/skills/e2e-testing-patterns/SKILL.md"
+      },
+      "score": 51,
+      "tier": "★★",
+      "isDuplicate": true,
+      "duplicateOf": "e2e-testing-patterns",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 23,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "error-handling-patterns",
+      "name": "error-handling-patterns",
+      "description": "Master error handling patterns across languages including exceptions, Result types, error propagation, and graceful degradation to build resilient applications. Use when implementing error handling, designing APIs, or improving application reliability.",
+      "category": "architecture",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/developer-essentials/skills/error-handling-patterns/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/developer-essentials/skills/error-handling-patterns/SKILL.md"
+      },
+      "score": 51,
+      "tier": "★★",
+      "isDuplicate": true,
+      "duplicateOf": "error-handling-patterns",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 23,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "fastapi-templates",
+      "name": "fastapi-templates",
+      "description": "Create production-ready FastAPI projects with async patterns, dependency injection, and comprehensive error handling. Use when building new FastAPI applications or setting up backend API projects.",
+      "category": "development",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/api-scaffolding/skills/fastapi-templates/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/api-scaffolding/skills/fastapi-templates/SKILL.md"
+      },
+      "score": 51,
+      "tier": "★★",
+      "isDuplicate": true,
+      "duplicateOf": "fastapi-templates",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 23,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "github-actions-templates",
+      "name": "github-actions-templates",
+      "description": "Create production-ready GitHub Actions workflows for automated testing, building, and deploying applications. Use when setting up CI/CD with GitHub Actions, automating development workflows, or creating reusable workflow templates.",
+      "category": "infrastructure",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/cicd-automation/skills/github-actions-templates/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/cicd-automation/skills/github-actions-templates/SKILL.md"
+      },
+      "score": 51,
+      "tier": "★★",
+      "isDuplicate": true,
+      "duplicateOf": "github-actions-templates",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 23,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "gitlab-ci-patterns",
+      "name": "gitlab-ci-patterns",
+      "description": "Build GitLab CI/CD pipelines with multi-stage workflows, caching, and distributed runners for scalable automation. Use when implementing GitLab CI/CD, optimizing pipeline performance, or setting up automated testing and deployment.",
+      "category": "infrastructure",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/cicd-automation/skills/gitlab-ci-patterns/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/cicd-automation/skills/gitlab-ci-patterns/SKILL.md"
+      },
+      "score": 51,
+      "tier": "★★",
+      "isDuplicate": true,
+      "duplicateOf": "gitlab-ci-patterns",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 23,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "hybrid-cloud-networking",
+      "name": "hybrid-cloud-networking",
+      "description": "Configure secure, high-performance connectivity between on-premises infrastructure and cloud platforms using VPN and dedicated connections. Use when building hybrid cloud architectures, connecting data centers to cloud, or implementing secure cross-premises networking.",
+      "category": "infrastructure",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/cloud-infrastructure/skills/hybrid-cloud-networking/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/cloud-infrastructure/skills/hybrid-cloud-networking/SKILL.md"
+      },
+      "score": 51,
+      "tier": "★★",
+      "isDuplicate": true,
+      "duplicateOf": "hybrid-cloud-networking",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 23,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "istio-traffic-management",
+      "name": "istio-traffic-management",
+      "description": "Configure Istio traffic management including routing, load balancing, circuit breakers, and canary deployments. Use when implementing service mesh traffic policies, progressive delivery, or resilience patterns.",
+      "category": "infrastructure",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/cloud-infrastructure/skills/istio-traffic-management/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/cloud-infrastructure/skills/istio-traffic-management/SKILL.md"
+      },
+      "score": 51,
+      "tier": "★★",
+      "isDuplicate": true,
+      "duplicateOf": "istio-traffic-management",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 23,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "microservices-patterns",
+      "name": "microservices-patterns",
+      "description": "Design microservices architectures with service boundaries, event-driven communication, and resilience patterns. Use when building distributed systems, decomposing monoliths, or implementing microservices.",
+      "category": "infrastructure",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/backend-development/skills/microservices-patterns/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/backend-development/skills/microservices-patterns/SKILL.md"
+      },
+      "score": 51,
+      "tier": "★★",
+      "isDuplicate": true,
+      "duplicateOf": "microservices-patterns",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 23,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "multi-cloud-architecture",
+      "name": "multi-cloud-architecture",
+      "description": "Design multi-cloud architectures using a decision framework to select and integrate services across AWS, Azure, and GCP. Use when building multi-cloud systems, avoiding vendor lock-in, or leveraging best-of-breed services from multiple providers.",
+      "category": "infrastructure",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/cloud-infrastructure/skills/multi-cloud-architecture/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/cloud-infrastructure/skills/multi-cloud-architecture/SKILL.md"
+      },
+      "score": 51,
+      "tier": "★★",
+      "isDuplicate": true,
+      "duplicateOf": "multi-cloud-architecture",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 23,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "nft-standards",
+      "name": "nft-standards",
+      "description": "Implement NFT standards (ERC-721, ERC-1155) with proper metadata handling, minting strategies, and marketplace integration. Use when creating NFT contracts, building NFT marketplaces, or implementing digital asset systems.",
+      "category": "general",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/blockchain-web3/skills/nft-standards/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/blockchain-web3/skills/nft-standards/SKILL.md"
+      },
+      "score": 51,
+      "tier": "★★",
+      "isDuplicate": true,
+      "duplicateOf": "nft-standards",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 23,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "secrets-management",
+      "name": "secrets-management",
+      "description": "Implement secure secrets management for CI/CD pipelines using Vault, AWS Secrets Manager, or native platform solutions. Use when handling sensitive credentials, rotating secrets, or securing CI/CD environments.",
+      "category": "security",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/cicd-automation/skills/secrets-management/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/cicd-automation/skills/secrets-management/SKILL.md"
+      },
+      "score": 51,
+      "tier": "★★",
+      "isDuplicate": true,
+      "duplicateOf": "secrets-management",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 23,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "solidity-security",
+      "name": "solidity-security",
+      "description": "Master smart contract security best practices to prevent common vulnerabilities and implement secure Solidity patterns. Use when writing smart contracts, auditing existing contracts, or implementing security measures for blockchain applications.",
+      "category": "security",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/blockchain-web3/skills/solidity-security/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/blockchain-web3/skills/solidity-security/SKILL.md"
+      },
+      "score": 51,
+      "tier": "★★",
+      "isDuplicate": true,
+      "duplicateOf": "solidity-security",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 23,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "terraform-module-library",
+      "name": "terraform-module-library",
+      "description": "Build reusable Terraform modules for AWS, Azure, and GCP infrastructure following infrastructure-as-code best practices. Use when creating infrastructure modules, standardizing cloud provisioning, or implementing reusable IaC components.",
+      "category": "infrastructure",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/cloud-infrastructure/skills/terraform-module-library/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/cloud-infrastructure/skills/terraform-module-library/SKILL.md"
+      },
+      "score": 51,
+      "tier": "★★",
+      "isDuplicate": true,
+      "duplicateOf": "terraform-module-library",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 23,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "web3-testing",
+      "name": "web3-testing",
+      "description": "Test smart contracts comprehensively using Hardhat and Foundry with unit tests, integration tests, and mainnet forking. Use when testing Solidity contracts, setting up blockchain test suites, or validating DeFi protocols.",
+      "category": "testing",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/blockchain-web3/skills/web3-testing/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/blockchain-web3/skills/web3-testing/SKILL.md"
+      },
+      "score": 51,
+      "tier": "★★",
+      "isDuplicate": true,
+      "duplicateOf": "web3-testing",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 23,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "workflow-patterns",
+      "name": "workflow-patterns",
+      "description": "Use this skill when implementing tasks according to Conductor's TDD workflow, handling phase checkpoints, managing git commits for tasks, or understanding the verification protocol.",
+      "category": "architecture",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/conductor/skills/workflow-patterns/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/conductor/skills/workflow-patterns/SKILL.md"
+      },
+      "score": 51,
+      "tier": "★★",
+      "isDuplicate": true,
+      "duplicateOf": "workflow-patterns",
+      "breakdown": {
+        "completeness": 11,
+        "uniqueness": 0,
+        "quality": 20,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "airflow-dag-patterns",
+      "name": "airflow-dag-patterns",
+      "description": "Build production Apache Airflow DAGs with best practices for operators, sensors, testing, and deployment. Use when creating data pipelines, orchestrating workflows, or scheduling batch jobs.",
+      "category": "infrastructure",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/data-engineering/skills/airflow-dag-patterns/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/data-engineering/skills/airflow-dag-patterns/SKILL.md"
+      },
+      "score": 48,
+      "tier": "★",
+      "isDuplicate": true,
+      "duplicateOf": "airflow-dag-patterns",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 20,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "bazel-build-optimization",
+      "name": "bazel-build-optimization",
+      "description": "Optimize Bazel builds for large-scale monorepos. Use when configuring Bazel, implementing remote execution, or optimizing build performance for enterprise codebases.",
+      "category": "general",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/developer-essentials/skills/bazel-build-optimization/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/developer-essentials/skills/bazel-build-optimization/SKILL.md"
+      },
+      "score": 48,
+      "tier": "★",
+      "isDuplicate": true,
+      "duplicateOf": "bazel-build-optimization",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 20,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "context-driven-development",
+      "name": "context-driven-development",
+      "description": "Use this skill when working with Conductor's context-driven development methodology, managing project context artifacts, or understanding the relationship between product.md, tech-stack.md, and workflow.md files.",
+      "category": "business",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/conductor/skills/context-driven-development/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/conductor/skills/context-driven-development/SKILL.md"
+      },
+      "score": 48,
+      "tier": "★",
+      "isDuplicate": true,
+      "duplicateOf": "context-driven-development",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 20,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "cqrs-implementation",
+      "name": "cqrs-implementation",
+      "description": "Implement Command Query Responsibility Segregation for scalable architectures. Use when separating read and write models, optimizing query performance, or building event-sourced systems.",
+      "category": "architecture",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/backend-development/skills/cqrs-implementation/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/backend-development/skills/cqrs-implementation/SKILL.md"
+      },
+      "score": 48,
+      "tier": "★",
+      "isDuplicate": true,
+      "duplicateOf": "cqrs-implementation",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 20,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "data-quality-frameworks",
+      "name": "data-quality-frameworks",
+      "description": "Implement data quality validation with Great Expectations, dbt tests, and data contracts. Use when building data quality pipelines, implementing validation rules, or establishing data contracts.",
+      "category": "data-ai",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/data-engineering/skills/data-quality-frameworks/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/data-engineering/skills/data-quality-frameworks/SKILL.md"
+      },
+      "score": 48,
+      "tier": "★",
+      "isDuplicate": true,
+      "duplicateOf": "data-quality-frameworks",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 20,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "data-storytelling",
+      "name": "data-storytelling",
+      "description": "Transform data into compelling narratives using visualization, context, and persuasive structure. Use when presenting analytics to stakeholders, creating data reports, or building executive presentations.",
+      "category": "data-ai",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/business-analytics/skills/data-storytelling/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/business-analytics/skills/data-storytelling/SKILL.md"
+      },
+      "score": 48,
+      "tier": "★",
+      "isDuplicate": true,
+      "duplicateOf": "data-storytelling",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 20,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "dbt-transformation-patterns",
+      "name": "dbt-transformation-patterns",
+      "description": "Master dbt (data build tool) for analytics engineering with model organization, testing, documentation, and incremental strategies. Use when building data transformations, creating data models, or implementing analytics engineering best practices.",
+      "category": "data-ai",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/data-engineering/skills/dbt-transformation-patterns/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/data-engineering/skills/dbt-transformation-patterns/SKILL.md"
+      },
+      "score": 48,
+      "tier": "★",
+      "isDuplicate": true,
+      "duplicateOf": "dbt-transformation-patterns",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 20,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "event-store-design",
+      "name": "event-store-design",
+      "description": "Design and implement event stores for event-sourced systems. Use when building event sourcing infrastructure, choosing event store technologies, or implementing event persistence patterns.",
+      "category": "architecture",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/backend-development/skills/event-store-design/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/backend-development/skills/event-store-design/SKILL.md"
+      },
+      "score": 48,
+      "tier": "★",
+      "isDuplicate": true,
+      "duplicateOf": "event-store-design",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 20,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "kpi-dashboard-design",
+      "name": "kpi-dashboard-design",
+      "description": "Design effective KPI dashboards with metrics selection, visualization best practices, and real-time monitoring patterns. Use when building business dashboards, selecting metrics, or designing data visualization layouts.",
+      "category": "infrastructure",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/business-analytics/skills/kpi-dashboard-design/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/business-analytics/skills/kpi-dashboard-design/SKILL.md"
+      },
+      "score": 48,
+      "tier": "★",
+      "isDuplicate": true,
+      "duplicateOf": "kpi-dashboard-design",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 20,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "linkerd-patterns",
+      "name": "linkerd-patterns",
+      "description": "Implement Linkerd service mesh patterns for lightweight, security-focused service mesh deployments. Use when setting up Linkerd, configuring traffic policies, or implementing zero-trust networking with minimal overhead.",
+      "category": "security",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/cloud-infrastructure/skills/linkerd-patterns/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/cloud-infrastructure/skills/linkerd-patterns/SKILL.md"
+      },
+      "score": 48,
+      "tier": "★",
+      "isDuplicate": true,
+      "duplicateOf": "linkerd-patterns",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 20,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "mtls-configuration",
+      "name": "mtls-configuration",
+      "description": "Configure mutual TLS (mTLS) for zero-trust service-to-service communication. Use when implementing zero-trust networking, certificate management, or securing internal service communication.",
+      "category": "security",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/cloud-infrastructure/skills/mtls-configuration/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/cloud-infrastructure/skills/mtls-configuration/SKILL.md"
+      },
+      "score": 48,
+      "tier": "★",
+      "isDuplicate": true,
+      "duplicateOf": "mtls-configuration",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 20,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "projection-patterns",
+      "name": "projection-patterns",
+      "description": "Build read models and projections from event streams. Use when implementing CQRS read sides, building materialized views, or optimizing query performance in event-sourced systems.",
+      "category": "architecture",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/backend-development/skills/projection-patterns/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/backend-development/skills/projection-patterns/SKILL.md"
+      },
+      "score": 48,
+      "tier": "★",
+      "isDuplicate": true,
+      "duplicateOf": "projection-patterns",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 20,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "saga-orchestration",
+      "name": "saga-orchestration",
+      "description": "Implement saga patterns for distributed transactions and cross-aggregate workflows. Use when coordinating multi-step business processes, handling compensating transactions, or managing long-running workflows.",
+      "category": "architecture",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/backend-development/skills/saga-orchestration/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/backend-development/skills/saga-orchestration/SKILL.md"
+      },
+      "score": 48,
+      "tier": "★",
+      "isDuplicate": true,
+      "duplicateOf": "saga-orchestration",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 20,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "screen-reader-testing",
+      "name": "screen-reader-testing",
+      "description": "Test web applications with screen readers including VoiceOver, NVDA, and JAWS. Use when validating screen reader compatibility, debugging accessibility issues, or ensuring assistive technology support.",
+      "category": "testing",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/accessibility-compliance/skills/screen-reader-testing/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/accessibility-compliance/skills/screen-reader-testing/SKILL.md"
+      },
+      "score": 48,
+      "tier": "★",
+      "isDuplicate": true,
+      "duplicateOf": "screen-reader-testing",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 20,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "service-mesh-observability",
+      "name": "service-mesh-observability",
+      "description": "Implement comprehensive observability for service meshes including distributed tracing, metrics, and visualization. Use when setting up mesh monitoring, debugging latency issues, or implementing SLOs for service communication.",
+      "category": "infrastructure",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/cloud-infrastructure/skills/service-mesh-observability/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/cloud-infrastructure/skills/service-mesh-observability/SKILL.md"
+      },
+      "score": 48,
+      "tier": "★",
+      "isDuplicate": true,
+      "duplicateOf": "service-mesh-observability",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 20,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "spark-optimization",
+      "name": "spark-optimization",
+      "description": "Optimize Apache Spark jobs with partitioning, caching, shuffle optimization, and memory tuning. Use when improving Spark performance, debugging slow jobs, or scaling data processing pipelines.",
+      "category": "data-ai",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/data-engineering/skills/spark-optimization/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/data-engineering/skills/spark-optimization/SKILL.md"
+      },
+      "score": 48,
+      "tier": "★",
+      "isDuplicate": true,
+      "duplicateOf": "spark-optimization",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 20,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "track-management",
+      "name": "track-management",
+      "description": "Use this skill when creating, managing, or working with Conductor tracks - the logical work units for features, bugs, and refactors. Applies to spec.md, plan.md, and track lifecycle operations.",
+      "category": "workflow",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/conductor/skills/track-management/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/conductor/skills/track-management/SKILL.md"
+      },
+      "score": 48,
+      "tier": "★",
+      "isDuplicate": true,
+      "duplicateOf": "track-management",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 20,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "wcag-audit-patterns",
+      "name": "wcag-audit-patterns",
+      "description": "Conduct WCAG 2.2 accessibility audits with automated testing, manual verification, and remediation guidance. Use when auditing websites for accessibility, fixing WCAG violations, or implementing accessible design patterns.",
+      "category": "architecture",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/accessibility-compliance/skills/wcag-audit-patterns/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/accessibility-compliance/skills/wcag-audit-patterns/SKILL.md"
+      },
+      "score": 48,
+      "tier": "★",
+      "isDuplicate": true,
+      "duplicateOf": "wcag-audit-patterns",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 20,
+        "repoSignals": 20
+      }
+    },
+    {
+      "id": "workflow-orchestration-patterns",
+      "name": "workflow-orchestration-patterns",
+      "description": "Design durable workflows with Temporal for distributed systems. Covers workflow vs activity separation, saga patterns, state management, and determinism constraints. Use when building long-running processes, distributed transactions, or microservice orchestration.",
+      "category": "architecture",
+      "tags": [],
+      "source": {
+        "repo": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents/blob/main/plugins/backend-development/skills/workflow-orchestration-patterns/SKILL.md",
+        "stars": 28598,
+        "forks": 3133,
+        "pushedAt": "2026-02-07T01:30:02Z",
+        "path": "plugins/backend-development/skills/workflow-orchestration-patterns/SKILL.md"
+      },
+      "score": 48,
+      "tier": "★",
+      "isDuplicate": true,
+      "duplicateOf": "workflow-orchestration-patterns",
+      "breakdown": {
+        "completeness": 8,
+        "uniqueness": 0,
+        "quality": 20,
+        "repoSignals": 20
+      }
+    }
+  ]
+}

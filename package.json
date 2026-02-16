@@ -22,6 +22,9 @@
   "scripts": {
     "build:catalog": "node scripts/build-catalog.js",
     "validate:skills": "node scripts/validate-skills.js",
+    "consolidate": "node scripts/consolidate.js",
+    "dashboard": "node scripts/scanner-dashboard.js",
+    "skills": "node scripts/skills-dashboard.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

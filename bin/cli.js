@@ -6,6 +6,10 @@ const path = require('path');
 const chalk = require('chalk');
 const os = require('os');
 const { listSkillIds, readSkill, tokenize, unique } = require('../lib/skill-utils');
+const { searchForSkillRepos } = require('../lib/github-scanner');
+const { rankAll, assignTier } = require('../lib/skill-ranker');
+const { consolidate, parseDuration } = require('../scripts/consolidate');
+const { loadRepoCatalog, getCatalogStats } = require('../lib/repo-catalog');
 const { version } = require('../package.json');
 
 const program = new Command();
@@ -480,6 +484,276 @@ program
       console.log('');
       console.log(`Common skills (curated): ${bundles.common.join(', ')}`);
     }
+  });
+
+program
+  .command('scan [query]')
+  .description('Quick search GitHub for public skill repos')
+  .option('-l, --limit <number>', 'Max results', parseLimit, 20)
+  .action(async (query, options) => {
+    const searchQuery = query || 'filename:SKILL.md path:skills';
+    console.log(chalk.bold(`\nScanning GitHub for: ${chalk.cyan(searchQuery)}\n`));
+    try {
+      const results = await searchForSkillRepos({
+        queries: [searchQuery],
+        limit: options.limit || 20,
+      });
+      if (!results.length) {
+        console.log(chalk.yellow('No skill repos found. Try a different query.'));
+        return;
+      }
+
+      const repos = new Map();
+      for (const item of results) {
+        if (!repos.has(item.repo)) {
+          repos.set(item.repo, []);
+        }
+        repos.get(item.repo).push(item.path);
+      }
+
+      console.log(chalk.bold(`Found ${results.length} skills across ${repos.size} repos:\n`));
+      for (const [repo, paths] of repos) {
+        console.log(`${chalk.green('◉')} ${chalk.cyan(repo)} — ${paths.length} skill(s)`);
+        for (const p of paths.slice(0, 5)) {
+          console.log(`  ${chalk.gray(p)}`);
+        }
+        if (paths.length > 5) {
+          console.log(chalk.gray(`  ... and ${paths.length - 5} more`));
+        }
+      }
+
+      console.log(chalk.gray(`\nRun ${chalk.white('ag-skills consolidate')} for full ranking and inventory.`));
+    } catch (err) {
+      console.error(chalk.red('Scan failed:'), err.message);
+      process.exit(1);
+    }
+  });
+
+program
+  .command('consolidate')
+  .description('Scan, rank, and inventory public GitHub skills')
+  .option('-q, --query <query>', 'GitHub search query', 'filename:SKILL.md path:skills')
+  .option('-l, --limit <number>', 'Max skills to collect', parseLimit, 20)
+  .option('-m, --min-score <number>', 'Minimum score to include', parseLimit, 0)
+  .option('-o, --output <path>', 'Output directory')
+  .option('-d, --duration <time>', 'Slow walk duration (e.g., 1h, 30m, 3h)')
+  .action(async (options) => {
+    const durationMs = options.duration ? parseDuration(options.duration) : 0;
+    const durationLabel = durationMs
+      ? `${(durationMs / 3600000).toFixed(1)} hour(s)`
+      : 'single pass';
+    console.log(chalk.bold('\n🔍 AI Skills Consolidator\n'));
+    console.log(chalk.gray(`Mode: ${durationMs ? '🐢 Slow walk' : '⚡ Quick scan'} (${durationLabel})\n`));
+    try {
+      const inventory = await consolidate({
+        query: options.query,
+        limit: options.limit,
+        minScore: options.minScore,
+        output: options.output ? path.resolve(options.output) : undefined,
+        durationMs,
+      });
+
+      if (inventory && inventory.skills.length) {
+        console.log('');
+        console.log(chalk.bold('Top Skills Found:\n'));
+        const top = inventory.skills.slice(0, 10);
+        for (const skill of top) {
+          const tierColor = skill.tier === '★★★' ? chalk.green
+            : skill.tier === '★★' ? chalk.yellow
+              : chalk.gray;
+          const dupBadge = skill.isDuplicate ? chalk.red(' [DUP]') : '';
+          console.log(`  ${tierColor(skill.tier)} ${chalk.bold(String(skill.score).padStart(3))} ${chalk.cyan(skill.id)}${dupBadge}`);
+          if (skill.description) {
+            console.log(`       ${chalk.gray(truncate(skill.description, 80))}`);
+          }
+          console.log(`       ${chalk.gray(`from ${skill.source.repo} (★${skill.source.stars})`)}`);
+        }
+        if (inventory.skills.length > 10) {
+          console.log(chalk.gray(`\n  ... and ${inventory.skills.length - 10} more. See discovered-skills.json for full list.`));
+        }
+        console.log(chalk.bold.green('\n✔ Consolidation complete!'));
+      }
+    } catch (err) {
+      console.error(chalk.red('Consolidation failed:'), err.message);
+      process.exit(1);
+    }
+  });
+
+program
+  .command('rank')
+  .description('Display ranked skills from the discovered inventory')
+  .option('-t, --tier <tier>', 'Filter by tier (3, 2, 1, or 0)')
+  .option('-c, --category <category>', 'Filter by category')
+  .option('-s, --sort <field>', 'Sort by: score, name, category', 'score')
+  .option('-d, --duplicates', 'Show only duplicates')
+  .action((options) => {
+    const inventoryPath = path.join(PACKAGE_ROOT, 'discovered-skills.json');
+    if (!fs.existsSync(inventoryPath)) {
+      console.error(chalk.red('No discovered-skills.json found.'));
+      console.log(chalk.gray('Run: ag-skills consolidate'));
+      process.exit(1);
+    }
+
+    let inventory;
+    try {
+      inventory = JSON.parse(fs.readFileSync(inventoryPath, 'utf8'));
+    } catch (err) {
+      console.error(chalk.red('Failed to parse discovered-skills.json:'), err.message);
+      process.exit(1);
+    }
+
+    let skills = inventory.skills || [];
+
+    if (options.tier) {
+      const tierMap = { '3': '★★★', '2': '★★', '1': '★', '0': '⬡' };
+      const tierFilter = tierMap[options.tier] || options.tier;
+      skills = skills.filter((s) => s.tier === tierFilter);
+    }
+
+    if (options.category) {
+      const cat = options.category.toLowerCase();
+      skills = skills.filter((s) => s.category === cat);
+    }
+
+    if (options.duplicates) {
+      skills = skills.filter((s) => s.isDuplicate);
+    }
+
+    if (options.sort === 'name') {
+      skills.sort((a, b) => a.id.localeCompare(b.id));
+    } else if (options.sort === 'category') {
+      skills.sort((a, b) => a.category.localeCompare(b.category) || b.score - a.score);
+    }
+
+    if (!skills.length) {
+      console.log(chalk.yellow('No skills match the given filters.'));
+      return;
+    }
+
+    console.log(chalk.bold(`\nRanked Skills (${skills.length}):\n`));
+    console.log(chalk.gray(`Scanned: ${inventory.scannedAt} | Query: ${inventory.query}\n`));
+
+    for (const skill of skills) {
+      const tierColor = skill.tier === '★★★' ? chalk.green
+        : skill.tier === '★★' ? chalk.yellow
+          : chalk.gray;
+      const dupBadge = skill.isDuplicate ? chalk.red(' [DUP]') : '';
+      console.log(`${tierColor(skill.tier)} ${chalk.bold(String(skill.score).padStart(3))} ${chalk.cyan(skill.id)} ${chalk.gray(`[${skill.category}]`)}${dupBadge}`);
+      if (skill.description) {
+        console.log(`     ${chalk.gray(truncate(skill.description, 90))}`);
+      }
+      console.log(`     ${chalk.gray(`${skill.source.repo} ★${skill.source.stars}`)}`);
+      if (skill.isDuplicate && skill.duplicateOf) {
+        console.log(`     ${chalk.red(`duplicate of: ${skill.duplicateOf}`)}`);
+      }
+    }
+
+    // Summary
+    const tierCounts = { '★★★': 0, '★★': 0, '★': 0, '⬡': 0 };
+    for (const s of skills) tierCounts[s.tier]++;
+    console.log('');
+    console.log(chalk.bold('Tier Summary:'));
+    console.log(`  ${chalk.green('★★★')} ${tierCounts['★★★']}  ${chalk.yellow('★★')} ${tierCounts['★★']}  ${chalk.gray('★')} ${tierCounts['★']}  ${chalk.gray('⬡')} ${tierCounts['⬡']}`);
+  });
+
+program
+  .command('repos')
+  .description('Show the repo catalog — all repos checked and their status')
+  .option('-s, --sort <field>', 'Sort by: name, stars, checked, skills', 'checked')
+  .option('--stale <hours>', 'Only show repos not checked in N hours')
+  .action((options) => {
+    const catalog = loadRepoCatalog();
+    const stats = getCatalogStats(catalog);
+    const entries = Object.entries(catalog.repos);
+
+    if (!entries.length) {
+      console.log(chalk.yellow('No repos in catalog yet. Run: ag-skills consolidate'));
+      return;
+    }
+
+    let repos = entries.map(([name, entry]) => ({ name, ...entry }));
+
+    // Filter stale
+    if (options.stale) {
+      const hours = parseFloat(options.stale);
+      const cutoff = new Date(Date.now() - hours * 60 * 60 * 1000).toISOString();
+      repos = repos.filter((r) => r.lastChecked < cutoff);
+    }
+
+    // Sort
+    switch (options.sort) {
+      case 'name':
+        repos.sort((a, b) => a.name.localeCompare(b.name));
+        break;
+      case 'stars':
+        repos.sort((a, b) => (b.stars || 0) - (a.stars || 0));
+        break;
+      case 'skills':
+        repos.sort((a, b) => (b.skillCount || 0) - (a.skillCount || 0));
+        break;
+      case 'checked':
+      default:
+        repos.sort((a, b) => (b.lastChecked || '').localeCompare(a.lastChecked || ''));
+        break;
+    }
+
+    console.log(chalk.bold(`\nRepo Catalog (${repos.length} repos):\n`));
+    console.log(chalk.gray(`Total tracked: ${stats.totalRepos} | With skills: ${stats.reposWithSkills} | Total skill files: ${stats.totalSkills}`));
+    if (stats.lastUpdated) {
+      console.log(chalk.gray(`Last updated: ${stats.lastUpdated}`));
+    }
+    console.log('');
+
+    for (const repo of repos) {
+      const skillBadge = repo.skillCount > 0
+        ? chalk.green(`${repo.skillCount} skill(s)`)
+        : chalk.gray('no skills');
+      const statusIcon = repo.status === 'has-skills' ? chalk.green('◉')
+        : repo.status === 'no-skills' ? chalk.gray('○')
+          : chalk.yellow('?');
+
+      console.log(`${statusIcon} ${chalk.cyan(repo.name)} — ★${repo.stars || 0} — ${skillBadge}`);
+      console.log(`  ${chalk.gray(`Last checked: ${repo.lastChecked} | First seen: ${repo.firstSeen}`)}`);
+      console.log(`  ${chalk.gray(`Checks: ${repo.checks ? repo.checks.length : 0} total`)}`);
+      if (repo.skillIds && repo.skillIds.length) {
+        const shown = repo.skillIds.slice(0, 5);
+        console.log(`  ${chalk.gray(`Skills: ${shown.join(', ')}${repo.skillIds.length > 5 ? ` +${repo.skillIds.length - 5} more` : ''}`)}`);
+      }
+    }
+  });
+
+program
+  .command('dashboard')
+  .description('Launch the scanner control dashboard (web UI)')
+  .option('-p, --port <number>', 'Port to listen on', '3847')
+  .action((options) => {
+    const { fork } = require('child_process');
+    const dashboardPath = path.join(__dirname, '..', 'scripts', 'scanner-dashboard.js');
+    const child = fork(dashboardPath, [], {
+      env: { ...process.env, PORT: options.port },
+      stdio: 'inherit',
+    });
+    child.on('error', (err) => {
+      console.error(chalk.red('Dashboard failed:'), err.message);
+      process.exit(1);
+    });
+  });
+
+program
+  .command('skills')
+  .description('Launch the skills catalog dashboard (web UI)')
+  .option('-p, --port <number>', 'Port to listen on', '3848')
+  .action((options) => {
+    const { fork } = require('child_process');
+    const dashPath = path.join(__dirname, '..', 'scripts', 'skills-dashboard.js');
+    const child = fork(dashPath, [], {
+      env: { ...process.env, PORT: options.port },
+      stdio: 'inherit',
+    });
+    child.on('error', (err) => {
+      console.error(chalk.red('Skills dashboard failed:'), err.message);
+      process.exit(1);
+    });
   });
 
 program.parse(process.argv);
